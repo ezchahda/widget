@@ -38,7 +38,7 @@ dojo.declare("widget.AuthorWidget", [dijit._Widget, dijit._Templated], {
         }).play();
     },
     _setAvatarAttr: function(av) {
-        if (av != "") {
+        if (av !== "") {
             this._set("avatar", av);
             this.avatarNode.src = av;
         }
